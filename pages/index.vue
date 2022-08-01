@@ -19,7 +19,7 @@ import {RepresentCategory} from "#components";
     <h1>
       Hello nuxt
     </h1>
-        <div v-for="record in homepages" :key="record._id" v-memo="homepages">
+        <div v-for="record in homepages" :key="record._id">
           <!--      <LazyHomePageSpotlight -->
           <!--        v-if="record.type === HomePageTypes._banner" -->
           <!--        :banner="record" -->
