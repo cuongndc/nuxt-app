@@ -2749,7 +2749,8 @@ const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
   __name: "index",
   setup(__props, { expose }) {
     expose();
-    const { data: homepages } = __vite_ssr_import_0__.useFetch("/api/wb/homepage", '$2lqntoOwq1');
+    const { data: homepages } = __vite_ssr_import_0__.useFetch("http://localhost:3000/wb/homepage", '$W15SIQbudU');
+    console.log("homepages", homepages.value);
     const __returned__ = { homepages, PageTypes: __vite_ssr_import_2__.PageTypes, RepresentCategory: __vite_ssr_import_3__.RepresentCategory };
     Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
     return __returned__;
@@ -3987,7 +3988,8 @@ const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
   __name: "index",
   setup(__props, { expose }) {
     expose();
-    const { data: homepages } = __vite_ssr_import_0__.useFetch("/api/wb/homepage", '$f2zD3eDNYs');
+    const { data: homepages } = __vite_ssr_import_0__.useFetch("http://localhost:3000/wb/homepage", '$d5adfqlpRa');
+    console.log("homepages", homepages.value);
     const __returned__ = { homepages, PageTypes: __vite_ssr_import_2__.PageTypes, RepresentCategory: __vite_ssr_import_3__.RepresentCategory };
     Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
     return __returned__;
@@ -4626,37 +4628,31 @@ Object.defineProperty(__vite_ssr_exports__, "default", { enumerable: true, confi
 // Parents: 
 // - /@id/virtual:nuxt:/Users/bonn/Documents/GitHub/nuxt-app/.nuxt/app-component.mjs ($id_oCEwtD16ct)
 // Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
 // - /node_modules/vue/server-renderer/index.js ($id_shX6HK8fbb)
+// - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
 // - /@id/plugin-vue:export-helper ($id_u7hjwQB3Fl)
 // --------------------
 const $id_K0boQqLzfo = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const _sfc_main = {}
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  const _component_NuxtPage = __vite_ssr_import_0__.resolveComponent("NuxtPage")
-
-  _push(`<div${__vite_ssr_import_1__.ssrRenderAttrs(_attrs)}>`)
-  _push(__vite_ssr_import_1__.ssrRenderComponent(_component_NuxtPage, null, null, _parent))
-  _push(`</div>`)
+  _push(`<div${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}><h1>HEEE CUONG</h1><!--    <NuxtPage />--></div>`)
 }
 
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_2__.useSSRContext()
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("app.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_3__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/bonn/Documents/GitHub/nuxt-app/app.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/bonn/Documents/GitHub/nuxt-app/app.vue"]]);
 }
 
 
