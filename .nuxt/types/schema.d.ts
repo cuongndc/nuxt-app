@@ -16,17 +16,7 @@ declare module '@nuxt/schema' {
     baseURL: string,
 
     proxy: {
-        options: {
-             target: string,
-
-             changeOrigin: boolean,
-
-             pathRewrite: {
-                   "^/api/": string,
-             },
-
-             pathFilter: Array<string>,
-        },
+        options: Array<any>,
     },
   }
   interface PublicRuntimeConfig {

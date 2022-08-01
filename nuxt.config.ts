@@ -5,16 +5,16 @@ export default defineNuxtConfig({
         baseURL: process.env.BASE_URL
     },
     modules: ['nuxt-proxy'],
-    proxy: {
-        options: {
-            target:  process.env.BASE_URL,
-            changeOrigin: true,
-            pathRewrite: {
-                '^/api/': '/api/',
-            },
-            pathFilter: [
-                '/api/'
-            ]
-        }
-    }
+    // proxy: {
+    //     options: {
+    //         target:  process.env.BASE_URL,
+    //         changeOrigin: true,
+    //         pathRewrite: {
+    //             '^/api/': '/api/',
+    //         },
+    //         pathFilter: [
+    //             '/api/'
+    //         ]
+    //     }
+    // }
 })
