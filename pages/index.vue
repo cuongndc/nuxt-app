@@ -19,18 +19,18 @@ import {RepresentCategory} from "#components";
     <h1>
       Hello nuxt
     </h1>
-        <div v-for="record in homepages" :key="record._id">
-          <!--      <LazyHomePageSpotlight -->
-          <!--        v-if="record.type === HomePageTypes._banner" -->
-          <!--        :banner="record" -->
-          <!--      /> -->
-<!--          <SharedBannerBar v-if="record.type === HomePageTypes._menu" /> -->
-          <!--      <LazyHomePageTrending v-if="record.type === HomePageTypes._trend" :record="record" /> -->
-          <RepresentCategory v-if="record.type === PageTypes._representCategory" :record="record" />
-<!--          <HomePageNewStory -->
-<!--            v-if="record.type === HomePageTypes._newest || record.type === HomePageTypes._recommendation" -->
-<!--            :record="record" -->
-<!--          /> -->
-        </div>
+<!--        <div v-for="record in homepages" :key="record._id">-->
+<!--          &lt;!&ndash;      <LazyHomePageSpotlight &ndash;&gt;-->
+<!--          &lt;!&ndash;        v-if="record.type === HomePageTypes._banner" &ndash;&gt;-->
+<!--          &lt;!&ndash;        :banner="record" &ndash;&gt;-->
+<!--          &lt;!&ndash;      /> &ndash;&gt;-->
+<!--&lt;!&ndash;          <SharedBannerBar v-if="record.type === HomePageTypes._menu" /> &ndash;&gt;-->
+<!--          &lt;!&ndash;      <LazyHomePageTrending v-if="record.type === HomePageTypes._trend" :record="record" /> &ndash;&gt;-->
+<!--          <RepresentCategory v-if="record.type === PageTypes._representCategory" :record="record" />-->
+<!--&lt;!&ndash;          <HomePageNewStory &ndash;&gt;-->
+<!--&lt;!&ndash;            v-if="record.type === HomePageTypes._newest || record.type === HomePageTypes._recommendation" &ndash;&gt;-->
+<!--&lt;!&ndash;            :record="record" &ndash;&gt;-->
+<!--&lt;!&ndash;          /> &ndash;&gt;-->
+<!--        </div>-->
   </main>
 </template>
