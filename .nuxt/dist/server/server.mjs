@@ -2749,7 +2749,7 @@ const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
   __name: "index",
   setup(__props, { expose }) {
     expose();
-    const { data: homepages } = __vite_ssr_import_0__.useFetch("/api/home", '$NS69aB5nF4');
+    const { data: homepages } = __vite_ssr_import_0__.useFetch("/api/wb/homepage", '$2lqntoOwq1');
     const __returned__ = { homepages, PageTypes: __vite_ssr_import_2__.PageTypes, RepresentCategory: __vite_ssr_import_3__.RepresentCategory };
     Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
     return __returned__;
@@ -3987,7 +3987,7 @@ const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
   __name: "index",
   setup(__props, { expose }) {
     expose();
-    const { data: homepages } = __vite_ssr_import_0__.useFetch("/api/home", '$RNQjHgXJWQ');
+    const { data: homepages } = __vite_ssr_import_0__.useFetch("/api/wb/homepage", '$f2zD3eDNYs');
     const __returned__ = { homepages, PageTypes: __vite_ssr_import_2__.PageTypes, RepresentCategory: __vite_ssr_import_3__.RepresentCategory };
     Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
     return __returned__;

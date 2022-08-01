@@ -6,8 +6,6 @@ import { PageTypes } from '~/types'
 // import HomePageRepresentCategory from '~/components/HomePage/RepresentCategory.vue'
 // import HomePageNewStory from '~/components/HomePage/NewStory.vue'
 
-const { data: homepages } = useFetch('/api/home')
-import {RepresentCategory} from "#components";
 
 </script>
 
@@ -19,18 +17,5 @@ import {RepresentCategory} from "#components";
     <h1>
       Hello nuxt
     </h1>
-<!--        <div v-for="record in homepages" :key="record._id">-->
-<!--          &lt;!&ndash;      <LazyHomePageSpotlight &ndash;&gt;-->
-<!--          &lt;!&ndash;        v-if="record.type === HomePageTypes._banner" &ndash;&gt;-->
-<!--          &lt;!&ndash;        :banner="record" &ndash;&gt;-->
-<!--          &lt;!&ndash;      /> &ndash;&gt;-->
-<!--&lt;!&ndash;          <SharedBannerBar v-if="record.type === HomePageTypes._menu" /> &ndash;&gt;-->
-<!--          &lt;!&ndash;      <LazyHomePageTrending v-if="record.type === HomePageTypes._trend" :record="record" /> &ndash;&gt;-->
-<!--          <RepresentCategory v-if="record.type === PageTypes._representCategory" :record="record" />-->
-<!--&lt;!&ndash;          <HomePageNewStory &ndash;&gt;-->
-<!--&lt;!&ndash;            v-if="record.type === HomePageTypes._newest || record.type === HomePageTypes._recommendation" &ndash;&gt;-->
-<!--&lt;!&ndash;            :record="record" &ndash;&gt;-->
-<!--&lt;!&ndash;          /> &ndash;&gt;-->
-<!--        </div>-->
   </main>
 </template>

@@ -10,6 +10,7 @@
     "nuxt": "3.0.0-rc.6"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "nuxt-proxy": "^0.2.4"
   }
 }

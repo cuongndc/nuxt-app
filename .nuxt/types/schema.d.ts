@@ -1,6 +1,7 @@
 import { NuxtModule } from '@nuxt/schema'
 declare module '@nuxt/schema' {
   interface NuxtConfig {
+    ["proxy"]?: typeof import("nuxt-proxy").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
   }
   interface RuntimeConfig {
@@ -13,6 +14,20 @@ declare module '@nuxt/schema' {
     },
 
     baseURL: string,
+
+    proxy: {
+        options: {
+             target: string,
+
+             changeOrigin: boolean,
+
+             pathRewrite: {
+                   "^/api/": string,
+             },
+
+             pathFilter: Array<string>,
+        },
+    },
   }
   interface PublicRuntimeConfig {
   
