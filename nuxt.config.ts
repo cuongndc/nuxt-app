@@ -4,10 +4,4 @@ export default defineNuxtConfig({
     runtimeConfig: {
         baseURL: process.env.BASE_URL
     },
-    modules: [
-        './modules/mongodb.setup',
-    ],
-    build: {
-        transpile: ['./modules/mongodb.setup'],
-    }
 })

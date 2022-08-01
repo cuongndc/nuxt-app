@@ -1,5 +1,3 @@
-import mongo from '~/server/mongo'
-import { collections } from '~/contants'
 import axios from 'axios'
 
 export default defineEventHandler(async () => {
@@ -9,7 +7,4 @@ export default defineEventHandler(async () => {
 
     console.log("response", response.data)
     return response.data.data
-    // return await mongo.db().collection(collections.homePages).find({}).sort({
-    //     orderIndex: 1,
-    // }).limit(12).toArray()
 })
